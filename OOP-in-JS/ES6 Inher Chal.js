@@ -28,7 +28,9 @@ class Vehicle {
 
 class Bicycle extends Vehicle {
   constructor(color) {
+    //This passes 2 as number of wheels and 30 as the max speed to the parent class Vehicle
     super(2,30)
+    //This initiates color for bicycle since the parent class does not contain a variable color
     this.color = color;
     
   }
