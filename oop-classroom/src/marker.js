@@ -6,21 +6,7 @@ class Marker {
 
     }
     write(input)  {
-        let stringNoSpace = input.split(' ').join('')
-        if (input === ' ') {
-            return ' '
-        }
-        else if(stringNoSpace <= this.remainingInk) {
-            this.remainingInk = this.remainingInk - stringNoSpace.length
-            return input
-        }
-        else if (stringNoSpace > this.remainingInk) {
-             newSlice = input.slice(0, this.remainingInk)
-             this.remainingInk = 0;
-             return newSlice
-
-        }
-        
+       
 
         
 
