@@ -6,6 +6,24 @@ class Marker {
 
     }
     write(input)  {
+        let inputArray = [];
+        let charsThatTakeInk = [];
+        let writtenArray = [];
+        inputArray = input.split('');
+        for( let i = 0; i < inputArray.length; i++) {
+            this.remainingInk--;
+            while( this.remainingInk >=0 || inputArray[i] == ' ') {
+                if (inputArray[i] = ' ') {
+                    this.remainingInk++;
+                }
+            inputArray[i] == ' ' ? console.log(): charsThatTakeInk.push(inputArray[i]);
+            writtenArray.push(inputArray[i])
+
+            }
+        }
+
+        return writtenArray
+        //console.log(charsThatTakeInk)
        
 
         
@@ -20,7 +38,7 @@ class Marker {
 //let merk = new Marker();
 //console.log(merk);
 //merk.write('hello')
-//console.log(merk.remain())
+//merk.write('hello how are you')
 
 
-module.exports = Marker
+//module.exports = Marker;
